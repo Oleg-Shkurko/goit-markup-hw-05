@@ -55,7 +55,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <a href="" class="button">Заказать услугу</a>
+        <button class="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <section class="section qualities-padding">
@@ -133,7 +133,7 @@
           <ul class="section-command list">
             <li class="command-list">
               <img
-                class="photo"
+                class="command-photo"
                 src="./image/product-designer.jpg"
                 alt="фото Игоря Демьяненко"
                 width="270"
@@ -173,7 +173,7 @@
             </li>
             <li class="command-list">
               <img
-                class="photo"
+                class="command-photo"
                 src="./image/frontend-developer.jpg"
                 alt="фото Ольги Репиной"
                 width="270"
@@ -213,7 +213,7 @@
             </li>
             <li class="command-list">
               <img
-                class="photo"
+                class="command-photo"
                 src="./image/marketing.jpg"
                 alt="фото Николая Тарасова"
                 width="270"
@@ -253,7 +253,7 @@
             </li>
             <li class="command-list">
               <img
-                class="photo"
+                class="command-photo"
                 src="./image/ui-designer.jpg"
                 alt="фото Михаила Ермакова"
                 width="270"
@@ -343,6 +343,15 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-close" data-modal-close>
+            <svg class="close">
+              <use href="./image/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer-box">
@@ -409,5 +418,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
