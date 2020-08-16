@@ -861,8 +861,6 @@ body {
 
 .group-list {
   width: calc(((100% - 30px * 2) / 3));
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .group-list:not(:nth-child(3n)) {
@@ -883,10 +881,11 @@ body {
   width: 100%;
   height: 100%;
   color: var(--primery-text-color);
+  border: 1px solid #eeeeee;
+  box-sizing: content-box;
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-sizing: border-box;
 }
 
 .web-sites:hover,
@@ -928,7 +927,6 @@ body {
   width: 100%;
   height: 294px;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
 .overlay {
@@ -936,6 +934,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 370px;
   height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -951,8 +950,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.web-box:hover .overlay {
+.web-sites:hover .overlay {
   transform: translatey(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
